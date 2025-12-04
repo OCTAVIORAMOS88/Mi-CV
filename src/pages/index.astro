@@ -1,0 +1,829 @@
+---
+const datos = {
+  nombre: "Octavio Ramos Díaz",
+  rolPrincipal:
+    "Estudiante de Ingeniería en Sistemas Computacionales · Desarrollador & Arquitecto de Soluciones para Vending",
+  resumen:
+    "Estudiante de Ingeniería en Sistemas Computacionales con enfoque práctico en automatización de máquinas expendedoras, integración de hardware de pago (Nayax, QuickPay, ICT, NV9, NV22), desarrollo web y administración de servidores. Emprendedor en TeVending, creando soluciones completas que combinan hardware, software y redes.",
+
+  contacto: {
+    ciudad: "Guadalajara, Jalisco, México",
+    telefono: "+52 33 1298 7499",
+    email: "tevendingservicio@gmail.com",
+    linkedin: "https://www.linkedin.com/in/octavio-ramos-díaz-3013a1241",
+    github: "https://github.com/OCTAVIORAMOS88",
+    web: "https://tevending.com.mx",
+    whatsapp: "331 298 7499",
+    // ✅ Asegúrate de tener estos archivos en /public
+    fotoRuta: "imagenes/octavio.jpg",
+    
+  },
+
+  objetivo:
+    "Mi objetivo es desarrollar soluciones tecnológicas que conecten el mundo físico (máquinas, sensores, terminales de pago) con plataformas de software modernas (APIs, dashboards web, bases de datos), aportando valor real a negocios que necesitan automatizar cobros, monitoreo y reportes.",
+
+  habilidadesTecnicas: [
+    "Desarrollo web: HTML, CSS, JavaScript, Astro",
+    "Automatización y scripts: Python",
+    "Delphi / Lazarus para aplicaciones de escritorio",
+    "Bases de datos: MySQL / MariaDB",
+    "Servidores: Debian 13, Windows Server 2019 (AD, FTP, servicios)",
+    "Redes: configuración básica, IP estática, NAT, rutas",
+    "Hardware: ESP32, ESP32-CAM, sensores, electroválvulas, módulos MDB-RS232",
+    "Integración de sistemas de pago: Nayax, QuickPay Mini, validadores de billetes (NV9, NV22, TAO 2), monederos ICT"
+  ],
+
+  habilidadesBlandas: [
+    "Pensamiento analítico y resolución de problemas",
+    "Aprendizaje autodidacta continuo",
+    "Comunicación con clientes y detección de necesidades",
+    "Documentación técnica clara",
+    "Trabajo en equipo en proyectos académicos y profesionales"
+  ],
+
+  experiencia: [
+    {
+      titulo: "Fundador & Desarrollador Técnico",
+      empresa: "TeVending – Soluciones en Sistemas de Pago y Automatización",
+      ubicacion: "Guadalajara, Jal.",
+      periodo: "2022 – Actualidad",
+      logros: [
+        "Diseño de soluciones completas para máquinas expendedoras: integración de terminales de pago, validadores de billetes, monederos y sistemas de impresión.",
+        "Integración de hardware de pago con microcontroladores (ESP32) y plataformas de software para monitoreo y control de cobros.",
+        "Implementación de scripts y herramientas en Python y JavaScript para generar cotizaciones, reportes y códigos QR para contacto por WhatsApp.",
+        "Diseño de arquitecturas de red y servidores (Debian, Windows Server) para alojar APIs, paneles administrativos y servicios relacionados con el ecosistema TeVending.",
+        "Atención personalizada a clientes potenciales (hoteles, fraccionamientos, gimnasios), entendiendo su operación y necesidades de cobro automatizado."
+      ]
+    },
+    {
+      titulo: "Desarrollo de Proyectos Académicos",
+      empresa: "Ingeniería en Sistemas Computacionales",
+      ubicacion: "Tlajomulco, Jal.",
+      periodo: "2020 – Actualidad",
+      logros: [
+        "Implementación de prácticas con lenguajes como Python, C, Delphi y JavaScript para resolver problemas de algoritmos, estructuras de datos y simulación.",
+        "Proyectos de Lenguajes y Autómatas, Inteligencia Artificial, Métodos Numéricos y Arquitecturas de Cómputo, incluyendo analizadores léxicos/sintácticos, simulaciones y modelos matemáticos.",
+        "Elaboración de investigaciones y trabajos escritos en temas de programación funcional, IA y arquitecturas de cómputo."
+      ]
+    }
+  ],
+
+  educacion: [
+    {
+      carrera: "Ingeniería en Sistemas Computacionales",
+      institucion: "Instituto Tecnológico (Tlajomulco / Región)",
+      periodo: "2020 – Actualidad",
+      detalles: [
+        "Enfoque en desarrollo de software, bases de datos, redes, arquitectura de cómputo e Inteligencia Artificial.",
+        "Participación activa en proyectos que combinan teoría con aplicaciones prácticas (análisis léxico/sintáctico, simulación, IA, redes)."
+      ]
+    }
+  ],
+
+  proyectosDestacados: [
+    {
+      nombre: "Ecosistema TeVending para Máquinas Expendedoras",
+      descripcion:
+        "Arquitectura en desarrollo que integra terminales de pago, validadores de billetes y monederos con un backend central, bases de datos y paneles de administración.",
+      tecnologias: [
+        "ESP32 / ESP32-CAM",
+        "Python",
+        "Node.js / Express (planeado)",
+        "MySQL / MariaDB",
+        "APIs REST",
+        "Integración MDB-RS232"
+      ]
+    },
+    {
+      nombre: "Catálogo Profesional TeVending",
+      descripcion:
+        "Catálogo digital y en PDF con diseño corporativo morado/blanco, con fichas técnicas de equipos, características avanzadas y enfoque comercial para clientes finales.",
+      tecnologias: ["HTML/CSS", "Excel avanzado", "Python (automatización de datos)", "Edición de imágenes"]
+    },
+    {
+      nombre: "Proyectos Académicos de IA y Lenguajes Formales",
+      descripcion:
+        "Investigaciones y trabajos sobre paradigmas de Inteligencia Artificial, lenguajes funcionales, mapas conceptuales, redes semánticas y autómatas.",
+      tecnologias: ["Python", "Herramientas de documentación", "Diagramas", "Word / PDF"]
+    }
+  ],
+
+  // PORTAFOLIO DE EQUIPOS TEVENDING
+  portafolioEquipos: [
+    {
+      nombre: "Vendy One",
+      tipo: "Terminal integral para máquinas expendedoras",
+      descripcion:
+        "Terminal de pago y telemetría para modernizar máquinas expendedoras, con enfoque en aumento de ingresos y administración centralizada.",
+      puntos: [
+        "Acepta tarjetas de crédito/débito, NFC, Apple Pay y Google Pay.",
+        "Permite ver ventas en tiempo real y controlar inventarios.",
+        "Genera listas de relleno (Pick-List) y facilita la gestión de rutas."
+      ]
+    },
+    {
+      nombre: "Monedero CC6100 – ICT",
+      tipo: "Validador y pagador de monedas",
+      descripcion:
+        "Monedero electrónico de alto rendimiento para máquinas expendedoras con arquitectura de validación óptica.",
+      puntos: [
+        "Compatible con protocolos MDB, Pulse y ccTalk.",
+        "Aceptación superior al 97 % y validación rápida.",
+        "Sistema de 6 tubos configurables con sensores independientes y protección anti fraude."
+      ]
+    },
+    {
+      nombre: "Billetero TAO 2 – ICT",
+      tipo: "Validador de billetes",
+      descripcion:
+        "Billetero de alta velocidad con sensores RGB y fotodiodos especializados en textura y densidad.",
+      puntos: [
+        "Hasta 3.2 billetes por segundo y cassette de 300 billetes.",
+        "Protocolo MDB y montaje estándar compatible con múltiples máquinas.",
+        "Sistema anti hilo y auto calibración dinámica."
+      ]
+    },
+    {
+      nombre: "Billetero NV9 – Innovative",
+      tipo: "Validador de billetes multiprotocolo",
+      descripcion:
+        "Validador de billetes con múltiples longitudes de onda y doble motor de tracción para alta confiabilidad.",
+      puntos: [
+        "Soporta MDB, Pulse, USB y ccTalk.",
+        "Validación rápida y capacidad de 300 billetes.",
+        "Sensores infrarrojos y precisión dimensional para evitar fraudes."
+      ]
+    },
+    {
+      nombre: "Billetero Platinum – PTI",
+      tipo: "Validador de billetes de alto desempeño",
+      descripcion:
+        "Diseñado para aplicaciones intensivas con doble motor y análisis avanzado de billetes.",
+      puntos: [
+        "Velocidad alta de aceptación y sistema anti hilo de triple sensor.",
+        "Análisis de microimpresiones y espectro UV para validación.",
+        "Certificaciones CE, UL, FCC y RoHS."
+      ]
+    },
+    {
+      nombre: "Impresora RELIANCE – PTI",
+      tipo: "Impresora térmica para kioscos y vending",
+      descripcion:
+        "Impresora térmica robusta para tickets, cupones o recibos en aplicaciones de autoservicio.",
+      puntos: [
+        "Alta velocidad de impresión y mecanismo de eject/retract.",
+        "Cabezal de 203 dpi con larga vida útil.",
+        "Interfaces RS-232, USB 2.0 y GPIO."
+      ]
+    },
+    {
+      nombre: "Impresora PHOENIX – PTI",
+      tipo: "Impresora térmica industrial",
+      descripcion:
+        "Impresora térmica con chasis metálico y sistema de impresión continuo ideal para entornos exigentes.",
+      puntos: [
+        "Velocidad de impresión elevada con modo ahorro de energía.",
+        "Sensores de papel y tapa para operación confiable.",
+        "Compatibilidad con ESC/POS extendido, USB HID y Serial."
+      ]
+    }
+  ]
+};
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>{datos.nombre} · CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --morado-oscuro: #3b0764;
+        --morado: #6d28d9;
+        --morado-claro: #e9d5ff;
+        --gris-fondo: #0b1020;
+        --gris-card: #0f172a;
+        --blanco: #f9fafb;
+        --texto: #e5e7eb;
+        --texto-suave: #9ca3af;
+        --borde-card: #1f2937;
+
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color-scheme: dark;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #1f2937 0, #020617 55%, #020617 100%);
+        display: flex;
+        justify-content: center;
+        padding: 2.5rem 1rem;
+      }
+
+      .cv-wrapper {
+        width: 100%;
+        max-width: 1100px;
+        background: linear-gradient(135deg, rgba(109, 40, 217, 0.18), rgba(15, 23, 42, 0.95));
+        border-radius: 1.75rem;
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        box-shadow:
+          0 25px 45px rgba(15, 23, 42, 0.9),
+          0 0 0 1px rgba(15, 23, 42, 0.8);
+        padding: 2.25rem 2.5rem;
+        color: var(--texto);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .cv-wrapper::before {
+        content: "";
+        position: absolute;
+        inset: -40%;
+        background: radial-gradient(circle at 0 0, rgba(236, 72, 153, 0.12), transparent 55%),
+          radial-gradient(circle at 100% 0, rgba(59, 130, 246, 0.16), transparent 55%);
+        opacity: 0.8;
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      .header {
+        display: grid;
+        grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr);
+        gap: 1.75rem;
+        margin-bottom: 2rem;
+        align-items: center;
+      }
+
+      @media (max-width: 900px) {
+        .cv-wrapper {
+          padding: 1.75rem 1.2rem;
+          border-radius: 1.25rem;
+        }
+        .header {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .header-main {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+      }
+
+      @media (max-width: 600px) {
+        .header-main {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      .marca {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        background: rgba(15, 23, 42, 0.85);
+        border: 1px solid rgba(168, 85, 247, 0.6);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--texto-suave);
+        margin-bottom: 0.6rem;
+      }
+
+      .marca-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #a855f7, #ec4899);
+        box-shadow: 0 0 12px rgba(236, 72, 153, 0.9);
+      }
+
+      .nombre {
+        font-size: clamp(2rem, 3vw, 2.6rem);
+        margin: 0 0 0.3rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #f9fafb;
+      }
+
+      .rol-principal {
+        margin: 0 0 0.9rem;
+        font-size: 0.98rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--texto-suave);
+      }
+
+      .resumen {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: #cbd5f5;
+        max-width: 40rem;
+      }
+
+      .foto-wrapper {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid rgba(168, 85, 247, 0.7);
+        box-shadow: 0 0 25px rgba(109, 40, 217, 0.6);
+        background: #111;
+        flex-shrink: 0;
+      }
+
+      .foto-perfil {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .contacto-card {
+        background: radial-gradient(circle at top left, rgba(109, 40, 217, 0.45), rgba(15, 23, 42, 0.98));
+        border-radius: 1.35rem;
+        border: 1px solid rgba(129, 140, 248, 0.4);
+        padding: 1.3rem 1.5rem;
+        box-shadow: 0 14px 30px rgba(15, 23, 42, 0.8);
+      }
+
+      .contacto-title {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: #e5e7eb;
+        margin-bottom: 0.7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .contacto-list {
+        display: grid;
+        gap: 0.35rem;
+        font-size: 0.88rem;
+      }
+
+      .contacto-item {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: #e5e7eb;
+      }
+
+      .contacto-item span.icon {
+        width: 1.35rem;
+        text-align: center;
+        opacity: 0.85;
+      }
+
+      .contacto-qr {
+        margin-top: 0.9rem;
+        padding-top: 0.8rem;
+        border-top: 1px solid rgba(148, 163, 184, 0.4);
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+
+      .contacto-qr img {
+        width: 70px;
+        height: 70px;
+        border-radius: 0.75rem;
+        border: 1px solid rgba(129, 140, 248, 0.7);
+        object-fit: cover;
+        background: #020617;
+      }
+
+      .contacto-qr-texto {
+        font-size: 0.82rem;
+        color: #e5e7eb;
+      }
+
+      a {
+        color: #c4b5fd;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .contenido {
+        display: grid;
+        grid-template-columns: 1.15fr 1.8fr;
+        gap: 2rem;
+      }
+
+      @media (max-width: 900px) {
+        .contenido {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .col {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .section {
+        background: rgba(15, 23, 42, 0.9);
+        border-radius: 1rem;
+        border: 1px solid var(--borde-card);
+        padding: 1.1rem 1.25rem;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.75rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .section-title {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: #e5e7eb;
+      }
+
+      .section-pill {
+        font-size: 0.7rem;
+        padding: 0.15rem 0.55rem;
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.6);
+        color: var(--texto-suave);
+      }
+
+      .texto-objetivo {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        color: #d1d5db;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+      }
+
+      .tag {
+        font-size: 0.78rem;
+        padding: 0.18rem 0.55rem;
+        border-radius: 999px;
+        background: rgba(79, 70, 229, 0.15);
+        border: 1px solid rgba(129, 140, 248, 0.35);
+        color: #e5e7eb;
+        backdrop-filter: blur(6px);
+      }
+
+      .item {
+        padding: 0.7rem 0;
+        border-bottom: 1px solid rgba(31, 41, 55, 0.9);
+      }
+
+      .item:last-child {
+        border-bottom: none;
+      }
+
+      .item-titulo {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #e5e7eb;
+        margin-bottom: 0.2rem;
+      }
+
+      .item-meta {
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: var(--texto-suave);
+        margin-bottom: 0.35rem;
+      }
+
+      .item-lista {
+        margin: 0;
+        padding-left: 1.1rem;
+        font-size: 0.86rem;
+        color: #d1d5db;
+      }
+
+      .item-lista li {
+        margin-bottom: 0.25rem;
+      }
+
+      .proyecto {
+        padding: 0.7rem 0;
+        border-bottom: 1px dashed rgba(55, 65, 81, 0.9);
+      }
+
+      .proyecto:last-child {
+        border-bottom: none;
+      }
+
+      .proyecto-nombre {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #e5e7eb;
+        margin-bottom: 0.25rem;
+      }
+
+      .proyecto-descripcion {
+        font-size: 0.85rem;
+        color: #cbd5f5;
+        margin-bottom: 0.35rem;
+      }
+
+      .proyecto-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+      }
+
+      .proyecto-tag {
+        font-size: 0.75rem;
+        padding: 0.1rem 0.5rem;
+        border-radius: 999px;
+        background: rgba(17, 24, 39, 0.9);
+        border: 1px solid rgba(129, 140, 248, 0.32);
+        color: #e5e7eb;
+      }
+
+      .portfolio-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 0.6rem;
+      }
+
+      @media (max-width: 900px) {
+        .portfolio-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .equipo-card {
+        background: radial-gradient(circle at top left, rgba(88, 28, 135, 0.7), rgba(15, 23, 42, 0.98));
+        border-radius: 0.9rem;
+        border: 1px solid rgba(167, 139, 250, 0.55);
+        padding: 0.8rem 0.9rem;
+        font-size: 0.82rem;
+        box-shadow: 0 10px 20px rgba(15, 23, 42, 0.8);
+      }
+
+      .equipo-nombre {
+        font-weight: 600;
+        color: #f9fafb;
+        margin-bottom: 0.1rem;
+      }
+
+      .equipo-tipo {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        color: #d8b4fe;
+        margin-bottom: 0.35rem;
+      }
+
+      .equipo-descripcion {
+        color: #e5e7eb;
+        margin-bottom: 0.35rem;
+      }
+
+      .equipo-lista {
+        margin: 0;
+        padding-left: 1.1rem;
+        color: #e5e7eb;
+      }
+
+      .footer {
+        margin-top: 1.5rem;
+        font-size: 0.75rem;
+        text-align: right;
+        color: var(--texto-suave);
+      }
+
+      .footer span {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="cv-wrapper">
+      <!-- ENCABEZADO -->
+      <header class="header">
+        <div class="header-main">
+          <div class="foto-wrapper">
+            <img
+              src={datos.contacto.fotoRuta}
+              alt="Foto de {datos.nombre}"
+              class="foto-perfil"
+            />
+          </div>
+          <div>
+            <div class="marca">
+              <span class="marca-dot"></span>
+              <span>TeVending · Perfil Profesional</span>
+            </div>
+            <h1 class="nombre">{datos.nombre}</h1>
+            <h2 class="rol-principal">{datos.rolPrincipal}</h2>
+            <p class="resumen">{datos.resumen}</p>
+          </div>
+        </div>
+
+        <aside class="contacto-card">
+          <div class="contacto-title">
+            <span>Contacto</span>
+            <span class="section-pill">Disponible</span>
+          </div>
+          <div class="contacto-list">
+            <div class="contacto-item">
+              <span class="icon">📍</span>
+              <span>{datos.contacto.ciudad}</span>
+            </div>
+            <div class="contacto-item">
+              <span class="icon">📞</span>
+              <span>{datos.contacto.telefono}</span>
+            </div>
+            <div class="contacto-item">
+              <span class="icon">✉️</span>
+              <span>
+                <a href={`mailto:${datos.contacto.email}`}>{datos.contacto.email}</a>
+              </span>
+            </div>
+            <div class="contacto-item">
+              <span class="icon">🌐</span>
+              <span>
+                <a href={datos.contacto.web}>Sitio web / TeVending</a>
+              </span>
+            </div>
+            <div class="contacto-item">
+              <span class="icon">in</span>
+              <span>
+                <a href={datos.contacto.linkedin}>LinkedIn</a>
+              </span>
+            </div>
+            <div class="contacto-item">
+              <span class="icon">💻</span>
+              <span>
+                <a href={datos.contacto.github}>GitHub</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="contacto-qr">
+            <img
+              src=imagenes/qr.png
+              alt="QR WhatsApp {datos.nombre}"
+            />
+            <div class="contacto-qr-texto">
+              <strong>WhatsApp directo</strong>
+              <div>Escanea el QR o escribe al:</div>
+              <div>
+                <strong>{datos.contacto.whatsapp}</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </header>
+
+      <!-- CONTENIDO PRINCIPAL -->
+      <main class="contenido">
+        <!-- Columna izquierda -->
+        <section class="col">
+          <section class="section">
+            <div class="section-header">
+              <h3 class="section-title">Objetivo profesional</h3>
+              <span class="section-pill">Enfocado a resultados</span>
+            </div>
+            <p class="texto-objetivo">{datos.objetivo}</p>
+          </section>
+
+          <section class="section">
+            <div class="section-header">
+              <h3 class="section-title">Habilidades técnicas</h3>
+              <span class="section-pill">Stack TeVending</span>
+            </div>
+            <div class="tags">
+              {datos.habilidadesTecnicas.map((h) => (
+                <span class="tag">{h}</span>
+              ))}
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="section-header">
+              <h3 class="section-title">Habilidades blandas</h3>
+              <span class="section-pill">Perfil humano</span>
+            </div>
+            <div class="tags">
+              {datos.habilidadesBlandas.map((h) => (
+                <span class="tag">{h}</span>
+              ))}
+            </div>
+          </section>
+
+          <!-- PORTAFOLIO EQUIPOS -->
+          <section class="section">
+            <div class="section-header">
+              <h3 class="section-title">Portafolio de equipos TeVending</h3>
+              <span class="section-pill">Equipos que manejo</span>
+            </div>
+            <div class="portfolio-grid">
+              {datos.portafolioEquipos.map((eq) => (
+                <article class="equipo-card">
+                  <div class="equipo-nombre">{eq.nombre}</div>
+                  <div class="equipo-tipo">{eq.tipo}</div>
+                  <div class="equipo-descripcion">{eq.descripcion}</div>
+                  <ul class="equipo-lista">
+                    {eq.puntos.map((p) => (
+                      <li>{p}</li>
+                    ))}
+                  </ul>
+                </article>
+              ))}
+            </div>
+          </section>
+        </section>
+
+        <!-- Columna derecha -->
+        <section class="col">
+          <section class="section">
+            <div class="section-header">
+              <h3 class="section-title">Experiencia</h3>
+              <span class="section-pill">Profesional & proyectos</span>
+            </div>
+
+            {datos.experiencia.map((exp) => (
+              <article class="item">
+                <div class="item-titulo">{exp.titulo}</div>
+                <div class="item-meta">
+                  {exp.empresa} · {exp.ubicacion} · {exp.periodo}
+                </div>
+                <ul class="item-lista">
+                  {exp.logros.map((logro) => (
+                    <li>{logro}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </section>
+
+          <section class="section">
+            <div class="section-header">
+              <h3 class="section-title">Educación</h3>
+              <span class="section-pill">Formación</span>
+            </div>
+
+            {datos.educacion.map((edu) => (
+              <article class="item">
+                <div class="item-titulo">{edu.carrera}</div>
+                <div class="item-meta">
+                  {edu.institucion} · {edu.periodo}
+                </div>
+                <ul class="item-lista">
+                  {edu.detalles.map((d) => (
+                    <li>{d}</li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </section>
+
+          <section class="section">
+            <div class="section-header">
+              <h3 class="section-title">Proyectos destacados</h3>
+              <span class="section-pill">Hands-on</span>
+            </div>
+
+            {datos.proyectosDestacados.map((p) => (
+              <article class="proyecto">
+                <div class="proyecto-nombre">{p.nombre}</div>
+                <div class="proyecto-descripcion">{p.descripcion}</div>
+                <div class="proyecto-tags">
+                  {p.tecnologias.map((t) => (
+                    <span class="proyecto-tag">{t}</span>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </section>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>CV Octavio Ramos Díaz.</span>
+      </footer>
+    </div>
+  </body>
+</html>
